@@ -24,23 +24,27 @@ app.post('/users', async (req, res) => {
     const team = req.body.team;
     const id = uuidv4();
 
+    console.log([id, username, password, role, team]);
+
 
     try {
         const salt = await bcrypt.genSalt();
+        console.log('gituwa')
         const hashedPassword = await bcrypt.hash(password, salt)
-
+        console.log('gituwa123')
         const user = await User.create({
-            id: id,
+            id: 350,
             username: username,
             password: hashedPassword,
             role: role,
             team: team
         })
-        user.redirect('/users')
+        console.log('gituwa1234')
+        // user.redirect('/users')
         console.log(user);
         res.status(201).send()
-    } catch {
-        res.status(500).send()
+    } catch (error) {
+        console.log(error)
     }
 
 })

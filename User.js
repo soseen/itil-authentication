@@ -18,8 +18,14 @@ const User = db.define('user', {
     team: {
         type: Sequelize.INTEGER
     },
-}, {
-    freezeTableName: true
+});
+
+// User.sync().then(() => {
+//     console.log('table created');
+//   })
+
+User.sync().then(() => {
+    console.log('Table created');
 })
 
 module.exports = User;
