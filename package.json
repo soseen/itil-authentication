@@ -9,13 +9,23 @@
   "author": "Przemek Sosnowski",
   "license": "ISC",
   "dependencies": {
+    "@types/body-parser": "^1.19.0",
+    "@types/cookie-parser": "^1.4.2",
+    "@types/express-session": "^1.17.3",
+    "@types/stripe": "^8.0.417",
     "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
     "cors": "^2.8.5",
     "ejs": "^3.1.5",
     "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "memorystore": "^1.6.4",
     "pg": "^8.5.1",
     "pg-hstore": "^2.3.3",
     "sequelize": "^6.3.5",
+    "sequelize-cli": "^6.2.0",
+    "stripe": "^8.132.0",
     "uuid": "^8.3.2"
   },
   "devDependencies": {
